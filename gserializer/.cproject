@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.293442906">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.293442906" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/gserializer"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/gserializer/Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="gserializer" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.293442906" name="Debug" parent="cdt.managedbuild.config.llvm.clang.linux.exe.debug">
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.debug.293442906." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.llvm.clang.linux.exe.debug.1746361669" name="LLVM with Clang (Linux)" superClass="cdt.managedbuild.toolchain.llvm.clang.linux.exe.debug">
+							<targetPlatform archList="all" id="cdt.managedbuild.target.llvm.clang.linux.platform.exe.debug.724704019" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.llvm.clang.linux.platform.exe.debug"/>
+							<builder buildPath="${workspace_loc:/gserializer}/Debug" id="cdt.managedbuild.target.llvm.clang.linux.builder.exe.debug.522038429" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="cdt.managedbuild.target.llvm.clang.linux.builder.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.linux.assembler.exe.debug.1562678901" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.clang.linux.assembler.exe.debug"/>
+							<tool id="cdt.managedbuild.tool.llvm.archiver.base.1503278456" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug.441269130" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.debug">
+								<option id="llvm.c_cpp.compiler.option.optimization.level.2069806108" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.592653000" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.include.paths.1497439202" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gserializer/include}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1158967785" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.linux.cpp.compiler.exe.debug.370204115" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.linux.cpp.compiler.exe.debug">
+								<option id="llvm.c_cpp.compiler.option.optimization.level.1949334550" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.1261675233" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.119969186" name="Language standard" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
+								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.flags.1894338991" name="Other dialect flags" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.flags" useByScannerDiscovery="true" value="-std=c++17" valueType="string"/>
+								<option id="llvm.c_cpp.compiler.option.include.paths.1059226406" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gserializer/include}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.1733086236" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.linker.exe.debug.2028585316" name="LLVM Clang C linker" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.linker.exe.debug">
+								<option defaultValue="false" id="llvm.c.link.option.nativeCBackEnd.371570311" name="Create native binary (with C backend code generator)" superClass="llvm.c.link.option.nativeCBackEnd" valueType="boolean"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.linux.cpp.linker.exe.debug.1128151460" name="LLVM Clang C++ linker" superClass="cdt.managedbuild.tool.llvm.clang.linux.cpp.linker.exe.debug">
+								<option defaultValue="false" id="llvm.c.link.option.nativeCBackEnd.548568076" name="Create native binary (with C backend code generator)" superClass="llvm.c.link.option.nativeCBackEnd" useByScannerDiscovery="false" valueType="boolean"/>
+								<option id="llvm.c.link.option.libs.269200293" name="Libraries (-l)" superClass="llvm.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+									<listOptionValue builtIn="false" value="stdc++"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.llvm.c.linker.input.681738514" superClass="cdt.managedbuild.tool.llvm.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.llvm.clang.linux.exe.release.699099153">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.llvm.clang.linux.exe.release.699099153" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.llvm.clang.linux.exe.release.699099153" name="Release" parent="cdt.managedbuild.config.llvm.clang.linux.exe.release">
+					<folderInfo id="cdt.managedbuild.config.llvm.clang.linux.exe.release.699099153." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.llvm.clang.linux.exe.release.941947834" name="LLVM with Clang (Linux)" superClass="cdt.managedbuild.toolchain.llvm.clang.linux.exe.release">
+							<targetPlatform archList="all" id="cdt.managedbuild.target.llvm.clang.linux.platform.exe.release.623747843" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.llvm.clang.linux.platform.exe.release"/>
+							<builder buildPath="${workspace_loc:/gserializer}/Release" id="cdt.managedbuild.target.llvm.clang.linux.builder.exe.release.1746271965" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="cdt.managedbuild.target.llvm.clang.linux.builder.exe.release"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.linux.assembler.exe.release.1145391716" name="LLVM assembler" superClass="cdt.managedbuild.tool.llvm.clang.linux.assembler.exe.release"/>
+							<tool id="cdt.managedbuild.tool.llvm.archiver.base.332222204" name="LLVM archiver" superClass="cdt.managedbuild.tool.llvm.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.release.2145372609" name="LLVM Clang" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.compiler.exe.release">
+								<option id="llvm.c_cpp.compiler.option.optimization.level.1987596844" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.2068398082" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.include.paths.1903126664" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gserializer/include}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.483802049" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.linux.cpp.compiler.exe.release.965402378" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.linux.cpp.compiler.exe.release">
+								<option id="llvm.c_cpp.compiler.option.optimization.level.314084337" name="Optimization Level" superClass="llvm.c_cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.debugging.level.1956768378" name="Debug Level" superClass="llvm.c_cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="llvm.c_cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="llvm.c_cpp.compiler.option.include.paths.1187002072" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gserializer/include}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.124029981" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.linker.exe.release.997927861" name="LLVM Clang C linker" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.linker.exe.release">
+								<option defaultValue="false" id="llvm.c.link.option.nativeCBackEnd.1660320503" name="Create native binary (with C backend code generator)" superClass="llvm.c.link.option.nativeCBackEnd" valueType="boolean"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.llvm.clang.linux.cpp.linker.exe.release.1861064876" name="LLVM Clang C++ linker" superClass="cdt.managedbuild.tool.llvm.clang.linux.cpp.linker.exe.release">
+								<option defaultValue="false" id="llvm.c.link.option.nativeCBackEnd.615788472" name="Create native binary (with C backend code generator)" superClass="llvm.c.link.option.nativeCBackEnd" valueType="boolean"/>
+								<option id="llvm.c.link.option.libs.871403188" name="Libraries (-l)" superClass="llvm.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="stdc++"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.llvm.c.linker.input.232402188" superClass="cdt.managedbuild.tool.llvm.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="gserializer.cdt.managedbuild.target.llvm.clang.linux.exe.1847078777" name="Executable" projectType="cdt.managedbuild.target.llvm.clang.linux.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/gserializer"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/gserializer"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>
