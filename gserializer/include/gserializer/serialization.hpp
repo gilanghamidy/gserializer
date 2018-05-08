@@ -325,9 +325,8 @@ namespace gserializer
 template<typename ValueType, ValueType theValue, typename Predicates>
 ValueType gserializer::constant_value<ValueType, theValue, Predicates>::theValueStorage = theValue;
 
-//TODO migrate headers
-#include "core/serializer_functor.hpp"
-//#include "TFC/Serialization/PredicateEvaluator.h"
+#include "gserializer/core/serializer_functor.hpp"
+#include "gserializer/core/predicate_evaluator.hpp"
 
 #define GSERIALIZER_DEFINE_TYPE_INFO( CLASS, ... ) \
 	template<> \
@@ -337,12 +336,10 @@ ValueType gserializer::constant_value<ValueType, theValue, Predicates>::theValue
 		typedef gserializer::type_serialization_info< CLASS , ##__VA_ARGS__ > type; \
 	}
 
-//TODO migrate introspect library and correct macro below
-//TODO feature check and use C++ auto template variable type instead
 #define GS_FIELD(MEMPTR, ...) gserializer::field_info<& MEMPTR, std::tuple < __VA_ARGS__ > >
 #define GS_CONSTANT(CONSTANT, ...) gserializer::constant_value< std::remove_const<decltype( CONSTANT )>::type, CONSTANT, std::tuple < __VA_ARGS__ > >
 
-
+#define GSAPI
 
 
 #endif /* INCLUDE_GSERIALIZER_SERIALIZATION_HPP_ */
