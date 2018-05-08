@@ -7,5 +7,4 @@
 
 #include "gserializer/serialization.hpp"
 #include "gserializer/class_serializer.hpp"
-
-
+#include "gserializer/discriminated_union.hpp"

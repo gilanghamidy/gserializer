@@ -339,8 +339,8 @@ ValueType gserializer::constant_value<ValueType, theValue, Predicates>::theValue
 
 //TODO migrate introspect library and correct macro below
 //TODO feature check and use C++ auto template variable type instead
-#define GSERIALIZER_FIELD(MEMPTR, ...) gserializer::field_info<& MEMPTR, std::tuple < __VA_ARGS__ > >
-#define GSERIALIZER_CONSTANT(CONSTANT, ...) gserializer::constant_value< std::remove_const<decltype( CONSTANT )>::type, CONSTANT, std::tuple < __VA_ARGS__ > >
+#define GS_FIELD(MEMPTR, ...) gserializer::field_info<& MEMPTR, std::tuple < __VA_ARGS__ > >
+#define GS_CONSTANT(CONSTANT, ...) gserializer::constant_value< std::remove_const<decltype( CONSTANT )>::type, CONSTANT, std::tuple < __VA_ARGS__ > >
 
 
 

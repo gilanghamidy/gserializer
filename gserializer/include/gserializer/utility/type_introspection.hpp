@@ -46,17 +46,21 @@ namespace gserializer::utility
 
 
 	template<typename MemPtrType>
-	struct member_field
+	struct member_field_pointer
 	{
-
+		static constexpr bool value = false;
 	};
 
 	template<typename Class, typename FieldType>
-	struct member_field<FieldType (Class::*)>
+	struct member_field_pointer<FieldType (Class::*)>
 	{
+		static constexpr bool value = true;
 		typedef Class declaring_type;
 		typedef FieldType field_type;
 	};
+
+	template<typename T>
+	inline constexpr bool is_member_field_pointer_v = member_field_pointer<T>::value;
 
 	template<typename FuncType>
 	struct member_function
@@ -278,6 +282,9 @@ namespace gserializer::utility
 			return value == other.value;
 		}
 	};
+
+	template<typename... TS> struct make_void { using type = void; };
+	template<typename... TS> using void_t = typename make_void<TS...>::type;
 }
 
 template<>

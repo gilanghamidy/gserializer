@@ -149,7 +149,7 @@ namespace gserializer
 	};
 
 	template<auto memPtr, typename Predicates>
-	struct field_info<memPtr, Predicates, std::void_t<typename type_serialization_info_selector<typename utility::member_function<decltype(memPtr)>::return_type>::type>>
+	struct field_info<memPtr, Predicates, utility::void_t<typename type_serialization_info_selector<typename utility::member_function<decltype(memPtr)>::return_type>::type>>
 	{
 		using pointer_to_member_info = utility::member_function<decltype(memPtr)>;
 		using value_type = typename pointer_to_member_info::return_type;

@@ -30,6 +30,7 @@
 								<option id="llvm.c_cpp.compiler.option.include.paths.1497439202" name="Include paths (-I)" superClass="llvm.c_cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gserializer/include}&quot;"/>
 								</option>
+								<option id="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std.1736447112" name="Language standard" superClass="cdt.managedbuild.tool.llvm.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.llvm.c.compiler.input.1158967785" superClass="cdt.managedbuild.tool.llvm.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.llvm.clang.linux.cpp.compiler.exe.debug.370204115" name="LLVM Clang++" superClass="cdt.managedbuild.tool.llvm.clang.linux.cpp.compiler.exe.debug">
@@ -102,6 +103,10 @@
 								<option defaultValue="false" id="llvm.c.link.option.nativeCBackEnd.615788472" name="Create native binary (with C backend code generator)" superClass="llvm.c.link.option.nativeCBackEnd" valueType="boolean"/>
 								<option id="llvm.c.link.option.libs.871403188" name="Libraries (-l)" superClass="llvm.c.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="stdc++"/>
+								</option>
+								<option id="llvm.c.link.option.paths.884971008" name="Library search path (-L)" superClass="llvm.c.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="/usr/lib/gcc/x86_64-redhat-linux/6.3.1/32/"/>
+									<listOptionValue builtIn="false" value="/ubuntu/home/gilang/bin/tizen-studio/tools/i386-linux-gnueabi-gcc-4.9/i386-linux-gnueabi/lib/"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.llvm.c.linker.input.232402188" superClass="cdt.managedbuild.tool.llvm.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
