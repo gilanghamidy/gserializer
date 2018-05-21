@@ -339,7 +339,7 @@ ValueType gserializer::constant_value<ValueType, theValue, Predicates>::theValue
 #define GS_FIELD(MEMPTR, ...) gserializer::field_info<& MEMPTR, std::tuple < __VA_ARGS__ > >
 #define GS_CONSTANT(CONSTANT, ...) gserializer::constant_value< std::remove_const<decltype( CONSTANT )>::type, CONSTANT, std::tuple < __VA_ARGS__ > >
 
-#define GSAPI
+#define GSAPI __attribute__((visibility("default")))
 
 
 #endif /* INCLUDE_GSERIALIZER_SERIALIZATION_HPP_ */

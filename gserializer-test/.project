@@ -3,6 +3,7 @@
 	<name>gserializer-test</name>
 	<comment></comment>
 	<projects>
+		<project>gserializer</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
