@@ -38,6 +38,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gserializer/include}&quot;"/>
 								</option>
 								<option id="llvm.c_cpp.compiler.option.misc.other.705521033" name="Other flags" superClass="llvm.c_cpp.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0" valueType="string"/>
+								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std.1610482209" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
+								<option id="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.flags.1521130364" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.option.dialect.flags" useByScannerDiscovery="true" value="-std=c++17" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.llvm.cpp.compiler.input.345716105" superClass="cdt.managedbuild.tool.llvm.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.llvm.clang.linux.c.linker.exe.debug.1037344050" name="LLVM Clang C linker" superClass="cdt.managedbuild.tool.llvm.clang.linux.c.linker.exe.debug">

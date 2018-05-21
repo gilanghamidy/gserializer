@@ -56,7 +56,7 @@ namespace gserializer
 	{
 		typedef class_deserializer<DeserializerClass, ValueType> deserializer;
 
-		static auto deserialize(typename DeserializerClass::SerializedType p, bool finalizePackedObject = true)
+		static auto deserialize(typename DeserializerClass::serialized_type p, bool finalizePackedObject = true)
 		{
 			return deserializer::deserialize(p, finalizePackedObject);
 		}
@@ -66,7 +66,7 @@ namespace gserializer
 			return deserializer::deserialize(deser);
 		}
 
-		static void Deserialize(DeserializerClass& deser, ValueType& ret)
+		static void deserialize(DeserializerClass& deser, ValueType& ret)
 		{
 			deserializer::deserialize(deser, ret);
 		}
@@ -78,13 +78,13 @@ namespace gserializer
 		static auto serialize(ValueType const& ref)
 		{
 			SerializerClass ser;
-			serializer_functor<SerializerClass, typename Fields::ValueType...>::func(ser, serializer_field<typename Fields::ValueType> { Fields::get(ref), Fields::evaluate(ref) }...);
+			serializer_functor<SerializerClass, typename Fields::value_type...>::func(ser, serializer_field<typename Fields::value_type> { Fields::get(ref), Fields::evaluate(ref) }...);
 			return ser.end_serialize();
 		}
 
-		static void Serialize(SerializerClass& packer, ValueType const& ref)
+		static void serialize(SerializerClass& packer, ValueType const& ref)
 		{
-			serializer_functor<SerializerClass, typename Fields::ValueType...>::func(packer, serializer_field<typename Fields::ValueType> { Fields::get(ref), Fields::evaluate(ref) }...);
+			serializer_functor<SerializerClass, typename Fields::ValueType...>::func(packer, serializer_field<typename Fields::value_type> { Fields::get(ref), Fields::evaluate(ref) }...);
 		}
 	};
 
@@ -122,7 +122,7 @@ namespace gserializer
 	template<typename DeserializerClass, typename ValueType, typename... Fields>
 	struct class_deserializer<DeserializerClass, ValueType, type_serialization_info<ValueType, Fields...>>
 	{
-		static auto deserialize(typename DeserializerClass::SerializedType p, bool finalizePackedObject = true)
+		static auto deserialize(typename DeserializerClass::serialized_type p, bool finalizePackedObject = true)
 		{
 			DeserializerClass deser(p);
 

@@ -58,8 +58,8 @@ namespace gserializer
 	template<auto memPtr, typename PredicateList = std::tuple<>, typename = void>
 	struct field_info
 	{
-		using pointer_to_member_info = utility::member_function<decltype(memPtr)>;
-		using value_type = typename pointer_to_member_info::return_type;
+		using pointer_to_member_info = utility::member_field_pointer<decltype(memPtr)>;
+		using value_type = typename pointer_to_member_info::field_type;
 		using declaring_class = typename pointer_to_member_info::declaring_type;
 
 		static value_type const& get(declaring_class const& ref)
@@ -171,7 +171,7 @@ namespace gserializer
 		static typename std::add_lvalue_reference<T>::type declref();
 
 
-		template<typename T1, typename T2> static correct test(decltype(std::declval<T1>().Deserialize(declref<T2>()))*);
+		template<typename T1, typename T2> static correct test(decltype(std::declval<T1>().deserialize(declref<T2>()))*);
 		template<typename T1, typename T2> static incorrect test(...);
 
 	public:
