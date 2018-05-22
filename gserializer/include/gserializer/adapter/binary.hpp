@@ -24,6 +24,7 @@ namespace gserializer::adapter
 		binary_serializer(serialized_type* bufferRef);
 		void serialize(uint32_t args);
 		void serialize(int64_t args);
+		void serialize(uint64_t args);
 		void serialize(unsigned char args);
 		void serialize(int args);
 		void serialize(bool args);

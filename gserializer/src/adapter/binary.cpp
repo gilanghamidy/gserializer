@@ -37,6 +37,16 @@ void binary_serializer::serialize(int64_t args)
 }
 
 GSAPI
+void binary_serializer::serialize(uint64_t args)
+{
+	//dlog_print(DLOG_DEBUG, "BinSer", "Serialize int64_t %d", args);
+	uint8_t* ref = (uint8_t*)&args;
+	for(size_t i = 0; i < sizeof(args); i++)
+		buffer->push_back(ref[i]);
+
+}
+
+GSAPI
 void binary_serializer::serialize(int args)
 {
 	//dlog_print(DLOG_DEBUG, "BinSer", "Serialize int32_t %d", args);

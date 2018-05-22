@@ -19,20 +19,7 @@
 
 namespace gserializer
 {
-	template<typename SerializerClass, typename ValueType>
-	struct serializer_exist
-	{
-		typedef char correct;
-		typedef struct { char val[2]; } incorrect;
-
-		template<typename TA, typename TB> static correct test(decltype(std::declval<TA>().serialize(std::declval<TB>()))*);
-		template<typename TA, typename TB> static incorrect test(...);
-
-		public:
-			static constexpr bool value = sizeof(test<SerializerClass, ValueType>(0)) == sizeof(correct);
-	};
-
-	template<typename SerializerClass, typename CurrentType, typename = void, bool = serializer_exist<SerializerClass, CurrentType>::value>
+	template<typename SerializerClass, typename CurrentType, typename = void, bool = serialization_available<SerializerClass, CurrentType>::value>
 	struct serializer_select
 	{
 		static void serialize(SerializerClass& s, CurrentType const& t)
@@ -54,7 +41,7 @@ namespace gserializer
 	template<typename SerializerClass, typename CurrentType, typename Void>
 	struct serializer_select<SerializerClass, CurrentType, Void, false>
 	{
-		static void Serialize(SerializerClass& ser, CurrentType const& t)
+		static void serialize(SerializerClass& ser, CurrentType const& t)
 		{
 			SerializerClass serIn = ser.begin_scope();
 			generic_serializer<SerializerClass, CurrentType>::serialize(serIn, t);
