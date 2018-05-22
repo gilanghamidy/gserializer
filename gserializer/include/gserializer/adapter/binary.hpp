@@ -26,8 +26,10 @@ namespace gserializer::adapter
 		void serialize(int64_t args);
 		void serialize(uint64_t args);
 		void serialize(unsigned char args);
+		void serialize(char args);
 		void serialize(int args);
 		void serialize(bool args);
+		void serialize(float args);
 		void serialize(double args);
 		void serialize(std::string const& args);
 
@@ -95,6 +97,8 @@ namespace gserializer::adapter
 	public:
 		binary_deserializer(serialized_type const& p);
 
+		void deserialize(char& target);
+
 		void deserialize(int8_t& target);
 		void deserialize(int16_t& target);
 		void deserialize(int32_t& target);
@@ -107,6 +111,7 @@ namespace gserializer::adapter
 
 		void deserialize(std::string& target);
 		void deserialize(bool& target);
+		void deserialize(float& target);
 		void deserialize(double& target);
 
 		//void Deserialize(SerializedType& composite);

@@ -84,7 +84,7 @@ namespace gserializer
 
 		static void serialize(SerializerClass& packer, ValueType const& ref)
 		{
-			serializer_functor<SerializerClass, typename Fields::ValueType...>::func(packer, serializer_field<typename Fields::value_type> { Fields::get(ref), Fields::evaluate(ref) }...);
+			serializer_functor<SerializerClass, typename Fields::value_type...>::func(packer, serializer_field<typename Fields::value_type> { Fields::get(ref), Fields::evaluate(ref) }...);
 		}
 	};
 

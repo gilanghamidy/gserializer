@@ -65,6 +65,15 @@ void binary_serializer::serialize(bool args)
 }
 
 GSAPI
+void binary_serializer::serialize(float args)
+{
+	//dlog_print(DLOG_DEBUG, "BinSer", "Serialize double %d", args);
+	uint8_t* ref = (uint8_t*)&args;
+	for(size_t i = 0; i < sizeof(args); i++)
+		buffer->push_back(ref[i]);
+}
+
+GSAPI
 void binary_serializer::serialize(double args)
 {
 	//dlog_print(DLOG_DEBUG, "BinSer", "Serialize double %d", args);
@@ -122,6 +131,12 @@ binary_serializer::binary_serializer(serialized_type* bufferRef) {
 
 GSAPI
 void binary_serializer::serialize(unsigned char args)
+{
+	this->buffer->push_back(args);
+}
+
+GSAPI
+void binary_serializer::serialize(char args)
 {
 	this->buffer->push_back(args);
 }
@@ -276,6 +291,13 @@ void binary_serializer::serialize(const SerializedType& p)
 }
 */
 
+
+GSAPI
+void binary_deserializer::deserialize(char& target)
+{
+	target = deserialize_impl<char>();
+}
+
 GSAPI
 void binary_deserializer::deserialize(int8_t& target)
 {
@@ -334,6 +356,12 @@ GSAPI
 void binary_deserializer::deserialize(bool& target)
 {
 	target = deserialize_impl<bool>();
+}
+
+GSAPI
+void binary_deserializer::deserialize(float& target)
+{
+	target = deserialize_impl<float>();
 }
 
 GSAPI
